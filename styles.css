@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.graph-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.logo {
+    max-width: 600px;
+    height: auto;
+}
+
+.numbers-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.homes-delivered,
+.homes-promised {
+    text-align: center;
+    padding: 40px; 
+    margin: 40px 60px 60px;
+    background-color: #df293500;
+    box-shadow: 0 6px 12px #ffde5900;
+    border-radius: 20px; 
+}
+
+.homes-delivered p,
+.homes-promised p {
+    font-weight: bold;
+    font-size: 48px; 
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255); 
+}
+
+#delivered-counter,
+#promised-counter {
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.progress-heading {
+    font-family: Arial;
+    color: black;
+    background-color: #ffde59;
+    display: inline-block;
+    padding: 10px 20px; 
+    text-align: center;
+    margin-bottom: 50px; 
+}
+
+.numbers-container {
+    margin-bottom: 150px; 
+}
+
+.numbers-container::before {
+    content: '';
+    position: absolute;
+    top: 230px;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background-image: url('housingbackground.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+.jacinta-container {
+    background-image: url('jacinta.png');
+    background-size: cover; 
+    height: 500px; 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -110px;
+}
+
+.jacinta-content {
+    width: 65%; 
+    padding: 5px; 
+    box-sizing: border-box; 
+    color: white; 
+    margin: 0 140px; 
+    text-align: left; 
+}
+
+.jacinta-content p {
+    font-size: 20px; 
+    margin: 40px 0; 
+    font-family: 'Arial', sans-serif;
+}
+
+.summary-container {
+    background-image: url('summary.png'); 
+    background-size: cover; 
+    height: 300px; 
+    background-repeat: no-repeat;
+    background-size: 60%;
+    margin-top: -250px;
+    background-position: center;
+    margin-bottom: -50px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .numbers-container::before {
+        height: 50%;
+        top: 190px;
+    }
+
+    .logo {
+        max-width: 300px;
+    }
+
+    .subtitle-container {
+        font-size: 16px; /* Adjust the value to your desired font size */
+    }
+
+    .homes-delivered p,
+    .homes-promised p {
+        font-size: 20px; 
+        margin-bottom: 15px;
+    }
+
+    .homes-delivered,
+    .homes-promised {
+        text-align: center;
+        padding: 5px; 
+        margin: 20px 20px 60px; 
+    }
+
+    #delivered-counter,
+    #promised-counter {
+        font-size: 43px;
+    }
+
+    .progress-heading {
+        padding: 10px 20px; 
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: -120px;
+    }
+
+    .jacinta-container {
+        background-image: none;
+        background-size: cover; 
+        height: 500px; 
+        background-repeat: no-repeat;
+        background-size: 150%;
+        margin-top: -170px;
+    }
+
+    .jacinta-content {
+        width: 100%; 
+        padding: 5px; 
+        box-sizing: border-box; 
+        color: rgb(0, 0, 0); 
+        margin: 0 0px; 
+        text-align: center; 
+    }
+
+    .jacinta-content p {
+        font-size: 15px; 
+        margin: 40px 0; 
+        font-family: 'Arial', sans-serif;
+    }
+
+    .summary-container {
+        background-image: url('summary.png'); 
+        background-size: cover; 
+        height: 300px; 
+        background-repeat: no-repeat;
+        background-size: 120%;
+        margin-top: -320px;
+        background-position: center;
+        margin-bottom: -50px;
+    }
+
+    .footer-container {
+        font-size: 14px; /* Adjust the value to your desired font size */
+        margin-top: -80px;
+    }
+
+    .graph-container {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 200px;
+    }
+}
